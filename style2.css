@@ -1,0 +1,24 @@
+article p {
+    width: 200px;
+    height: 150px;
+    padding: 30px;
+    border: 2px blue solid;
+    margin: 30px;
+}
+header ul {
+    display: flex;
+    background-color: #cccccc;
+    list-style: none;
+}
+header li {
+    text-align: center;
+    border: 1px solid #ffffff;
+    padding: 6px 30px;
+}
+article {
+    display: flex;
+}
+footer li {
+    display: inline-block;
+    margin: 10px;
+}

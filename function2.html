@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数で2人分のテストの点を計算するスクリプト</title>
+</head>
+<body>
+    <script>
+        function sumScores(scores) {
+            let sum = 0;
+            for (let i = 0; i < scores.length; i++) {
+                sum += scores[i];
+            }
+            return sum;
+        }
+        let scoresA = [80, 75, 60];
+        let sumA = sumScores(scoresA);
+        document.write("Aさんの点数の合計は" + sumA + "点です。<br>");
+        let scoresB = [80, 75, 60, 100, 50];
+        let sumB = sumScores(scoresB);
+        document.write("Bさんの点数の合計は" + sumB + "点です。<br>");
+    </script>
+</body>
+</html>

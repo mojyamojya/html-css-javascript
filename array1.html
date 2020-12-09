@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列でテストの点を合計するスクリプト</title>
+</head>
+<body>
+    <script>
+        let scores = [80, 75, 60];
+        document.write("数学の点数：" + scores[0] + "<br>");
+        document.write("英語の点数：" + scores[1] + "<br>");
+        document.write("国語の点数：" + scores[2] + "<br>");
+        let sum = 0;
+        for (let i = 0; i < 3; i++) {
+            sum += scores[i];
+        }
+        document.write("点数の合計は" + sum + "点です。");
+    </script>
+</body>
+</html>

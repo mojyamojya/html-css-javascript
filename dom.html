@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMを操作するスクリプト</title>
+</head>
+<body>
+    <h1 id="title">getElementByIdを使った部分</h1>
+    <p id="summary"></p>
+    <ul>
+        <li>querySelectorAllを使った部分</li>
+        <li>querySelectorAllを使った部分</li>
+    </ul>
+    <script>
+        let title = document.getElementById("title");
+        title.style.color = "red";
+        let summary = document.querySelector("#summary");
+        summary.innerHTML = "querySelectorを使った部分";
+        let lies = document.querySelectorAll("ul li");
+        for (let i = 0; i < lies.length; i++) {
+            lies[i].style.fontWeight = "bold";
+        }
+    </script>
+</body>
+</html>

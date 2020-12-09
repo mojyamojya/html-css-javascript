@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数でテストの点を計算するスクリプト</title>
+</head>
+<body>
+    <script>
+        function sumScores() {
+            let scores = [80, 75, 60];
+            let sum = 0;
+            for (let i = 0; i < scores.length; i++) {
+                sum += scores[i];
+            }
+            document.write("点数の合計は" + sum + "点です。");
+        }
+
+        sumScores();
+    </script>
+</body>
+</html>

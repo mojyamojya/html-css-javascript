@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListenerを使ったスクリプト</title>
+    <style>
+        #msg {
+            font-size: 60px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p><button>Click me!</button></p>
+    <p id="msg"></p>
+    <script>
+        let msg = document.getElementById("msg");
+        let button = document.querySelector("button");
+        button.addEventListener("click", function() {
+            msg.innerHTML = "ボタンが押されました！";
+        });
+    </script>
+</body>
+</html>
