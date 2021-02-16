@@ -13,9 +13,11 @@
             for (let i = 0; i < scores.length; i++) {
                 sum += scores[i];
             }
-            document.write("点数の合計は" + sum + "点です。");
+            document.write("点数の合計は" + sum + "点です。<br>");
         }
 
+        sumScores();
+        document.write("呼び出し側に処理が戻りました。<br>");
         sumScores();
     </script>
 </body>
