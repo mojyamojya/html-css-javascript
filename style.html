@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <p>鈴木 一郎</p>
+    <p class="right">今日はカレーライスを食べた。</p>
+    <p class="right">明日も明後日もカレーライスを食べる。</p>
+    <script>
+        const elems = document.querySelectorAll(".right");
+        for (let i = 0; i < elems.length; i++) {
+            elems[i].style.color = "red";
+        }
+        // elems.forEach(function(elem){
+        //     elem.style.color = "red";
+        // });
+    </script>
+</body>
+</html>
