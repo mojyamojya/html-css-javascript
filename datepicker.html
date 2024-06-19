@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 日付ピッカー デザインsunny-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/sunny/jquery-ui.css" defer>
+</head>
+<body>
+    <form name="myForm" class="form-horizontal" method="post" novalidate>
+        <div class="form-group">
+            <label class="col-md-2 control-label">日付：</label>
+            <div class="col-md-10">
+                <input id="checkin" type="text" class="form-control date dateFrom" />
+                ～
+                <input id="checkout" type="text" class="form-control date dateTo" />
+            </div>
+        </div>
+    </form>
+    
+    <!-- JQuery 3.7.1 -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <!-- JQuery-UI 1.13.2 -->
+    <script
+    src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+    crossorigin="anonymous"></script>
+    <!-- 日付ピッカーの日本語化-->
+    <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
+    <script>
+    $(function () {
+         let reservedDates = ["2024-06-29","2024-06-30","2024-06-25","2024-06-26","2024-06-27","2024-06-22","2024-06-23","2024-06-24","2024-06-19","2024-06-20"];
+      
+         $('#checkin').datepicker({
+                minDate: new Date(),
+                beforeShowDay: function (date) {
+
+                    var d = date.toLocaleDateString('sv-SE');
+                    if (reservedDates.indexOf(d) !== -1) {
+                        return [false, "", "予約済です"];
+                    } else {
+                        return [true, "", ""];
+                    }
+                }
+            })
+            $('#checkout').datepicker({
+                minDate: new Date(),
+                beforeShowDay: function (date) {
+
+                    var d = date.toLocaleDateString('sv-SE');
+                    if (reservedDates.indexOf(d) !== -1) {
+                        return [false, "", "予約済です"];
+                    } else {
+                        return [true, "", ""];
+                    }
+                }
+            })
+      });
+    </script>
+</body>
+</html>
