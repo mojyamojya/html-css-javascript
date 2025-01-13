@@ -1,0 +1,16 @@
+.size {
+    font-size: 50%;
+}
+.decoration {
+    text-decoration: underline;
+}
+.align {
+    text-align: center;
+}
+.l_height {
+    line-height: 300%;
+    background-color: gray;
+}
+.indent {
+    text-indent: 2rem;
+}
