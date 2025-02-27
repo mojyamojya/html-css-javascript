@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>もじゃもじゃラボ</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="action.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>もじゃもじゃラボ</h1>
+    </header>
+    <main>
+        <section>
+            <h2>キャラクターで遊ぶ♪</h2>
+            <img id="pic" src="top.png" alt="キャラクターの画像">
+            <p>色々な動きを試してみよう！</p>
+        </section>
+        <nav>
+            <h3>操作メニュー</h3>
+            <ul>
+                <li onClick="alert('わーいわーい！');">しゃべる</li>
+                <li onClick="changeImage('down.png');">ドヨ〜ン</li>
+                <li onClick="changeImage('run.png');">走る</li>
+                <li onClick="changeImage('baba.png');">ばあ</li>
+                <li onClick="changeImage('change.png');">変身！</li>
+                <li onClick="changeImage('top.png');">戻る</li>
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <p class="copyright">&copy; もじゃもじゃ</p>
+    </footer>
+</body>
+</html>

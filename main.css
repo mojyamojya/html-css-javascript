@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-image: url("body_bg.png");
+    background-repeat: repeat;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 20px;
+    background-image: url("title_bg.png");
+    background-size: cover;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+}
+
+main h2 {
+    color: crimson;
+    margin-top: 30px;
+}
+
+main img {
+    background-color: white;
+    border: 10px solid gray;
+}
+
+main p {
+    font-size: 18px;
+}
+
+nav h3 {
+    color: steelblue;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav ul li:hover {
+    background-color: hotpink;
+}
+
+footer p {
+    margin-top: 30px;
+    color: gray;
+    font-size: 11px;
+}
